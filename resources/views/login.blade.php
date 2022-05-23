@@ -4,16 +4,18 @@
 <div class="container custom-login">
     <div class="row">
         <div class="col-sm-4 offset-sm-4">
-            <form class="p-2 my-5">
+            <form class="p-2 my-5" action="login" method="POST">
+                @csrf
+                
                      <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" id="form2Example1" class="form-control" />
+                        <input type="email" name="email" id="form2Example1" class="form-control" />
                         <label class="form-label" for="form2Example1">Email address</label>
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                        <input type="password" id="form2Example2" class="form-control" />
+                        <input type="password" name="password" id="form2Example2" class="form-control" />
                         <label class="form-label" for="form2Example2">Password</label>
                     </div>
 
